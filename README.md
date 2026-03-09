@@ -48,11 +48,11 @@ expense_project
 ├── app
 │   ├── cli.py
 │   ├── ingestion
-│   │   ├──csv_reader.py
+│   │    └── csv_reader.py
 │   ├── validation
-│   │   ├──expense_schema.py
+│   │    └── expense_schema.py
 │   ├──export
-│   │   ├──export_csv.py
+│   │    └── export_csv.py
 │   └── db
 │       ├── connection.py
 │       ├── create_tables.py
@@ -101,6 +101,7 @@ expense_project
 * Docker
 * Pytest
 * Pydantic
+
 
 
 
