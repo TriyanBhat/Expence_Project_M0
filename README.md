@@ -1,20 +1,25 @@
-#Expense Project
+# Expense Data Pipeline Project
 
-A simple data engineering pipeline built with Python, PostgreSQL, and Docker that ingests expense data from CSV files, validates it, stores it in a database, and allows querying through a CLI.
+A simple **data engineering pipeline** built using **Python, PostgreSQL, and Docker**.
+The pipeline ingests expense data from CSV files, validates it, stores it in a database, and allows querying through a CLI.
 
+---
 
-##Project Overview
+## Project Overview
 
-This project demonstrates a basic data pipeline architecture:
-Read expense data from CSV files
-Validate records using Pydantic
-Store data in PostgreSQL
-Query and analyze data using CLI commands
-Export data in tabular format
+This project demonstrates a basic **data pipeline architecture**:
 
+* Read expense data from CSV files
+* Validate records using **Pydantic**
+* Store data in **PostgreSQL**
+* Query and analyze data using CLI commands
+* Export results in tabular format
 
-##Architecture
+---
 
+## Architecture
+
+```
 CSV Files
    │
    ▼
@@ -31,10 +36,13 @@ CLI Commands
    │
    ▼
 Tabular Output / Export
+```
 
+---
 
-##Project Structure
+## Project Structure
 
+```
 expense_project
 │
 ├── app
@@ -42,13 +50,12 @@ expense_project
 │   ├── ingestion
 │   ├── validation
 │   └── db
-│   
 │
 ├── data
-│   └──expenses.csv
+│   └── expenses.csv
 │
 ├── tests
-│   ├──conftest.py
+│   ├── conftest.py
 │   ├── test_csv_reader.py
 │   └── test_validation.py
 │
@@ -58,15 +65,54 @@ expense_project
 ├── main.py
 ├── ARCHITECTURE.md
 └── README.md
+```
 
+---
 
-##Features
+## Features
 
-CSV data ingestion
-Schema validation using Pydantic
-Storage in PostgreSQL
-CLI based analytics queries
-Tabular output using tabulate
-Containerized with Docker
-Unit testing using pytest
+* CSV data ingestion
+* Schema validation using **Pydantic**
+* Storage in **PostgreSQL**
+* CLI-based analytics queries
+* Tabular output using **tabulate**
+* Containerized with **Docker**
+* Unit testing using **pytest**
 
+---
+
+## Running the Project
+
+### Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### Run ingestion
+
+```bash
+python main.py ingest
+```
+
+### Run analytics
+
+```bash
+python main.py analytics
+```
+
+### Run tests
+
+```bash
+pytest
+```
+
+---
+
+## Tech Stack
+
+* Python
+* PostgreSQL
+* Docker
+* Pytest
+* Pydantic
