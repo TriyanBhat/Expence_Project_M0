@@ -1,5 +1,5 @@
 import sys
-from app.cli import ingest, data, total, category, date_filter, export
+from app.cli import ingest, data, total, category, date_filter
 
 if len(sys.argv) < 2:
     print("Usage:")
@@ -8,10 +8,9 @@ if len(sys.argv) < 2:
     print ("python main.py total")
     print("python main.py category")
     print("python main.py date YYYY-MM-DD")
-    print("python main.py export")
     sys.exit()
 
-command = sys.argv[1]
+command = sys.argv[1] 
 
 if command == "ingest":
     ingest()
@@ -27,9 +26,6 @@ elif command == "category":
 
 elif command == "date":
     date_filter(sys.argv[2])
-
-elif command == "export":
-    export()
 
 else:
     print("Invalid command")
