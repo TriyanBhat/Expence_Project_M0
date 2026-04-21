@@ -58,7 +58,6 @@ expense_project
 │       ├── create_tables.py
 │       ├── get_category_summary.py
 │       ├── get_expenses_by_date.py
-│       ├── get_expenses.py
 │       ├── get_total.py
 │       └── insert_expense.py
 │
